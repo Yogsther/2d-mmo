@@ -1,0 +1,1464 @@
+fileFormatVersion: 2
+guid: 4786fa1d203852b4c890e8d54a3cf3e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7912690347645431768
+    second: smooth-sprite.0.2_0
+  - first:
+      213: -5052499188537071294
+    second: smooth-sprite.0.2_1
+  - first:
+      213: 5402534942628310816
+    second: smooth-sprite.0.2_2
+  - first:
+      213: -550274235667739623
+    second: smooth-sprite.0.2_3
+  - first:
+      213: 8589521779485325090
+    second: smooth-sprite.0.2_4
+  - first:
+      213: -9152803663639581212
+    second: smooth-sprite.0.2_5
+  - first:
+      213: -8939332232753730425
+    second: smooth-sprite.0.2_6
+  - first:
+      213: 4238463765907181883
+    second: smooth-sprite.0.2_7
+  - first:
+      213: -8169492961796518092
+    second: smooth-sprite.0.2_8
+  - first:
+      213: 3276842889814817120
+    second: smooth-sprite.0.2_9
+  - first:
+      213: -5218585520017681195
+    second: smooth-sprite.0.2_10
+  - first:
+      213: -4673526447274968516
+    second: smooth-sprite.0.2_11
+  - first:
+      213: -4398392760512175507
+    second: smooth-sprite.0.2_12
+  - first:
+      213: 6515012260019839797
+    second: smooth-sprite.0.2_13
+  - first:
+      213: -6010763777960206960
+    second: smooth-sprite.0.2_14
+  - first:
+      213: -3906180603615244770
+    second: smooth-sprite.0.2_15
+  - first:
+      213: 5469500760133292830
+    second: smooth-sprite.0.2_16
+  - first:
+      213: 3923358618995198537
+    second: smooth-sprite.0.2_17
+  - first:
+      213: 6808938177733488520
+    second: smooth-sprite.0.2_18
+  - first:
+      213: -1993321798295076328
+    second: smooth-sprite.0.2_19
+  - first:
+      213: 492935464948719115
+    second: smooth-sprite.0.2_20
+  - first:
+      213: -7388535980124270464
+    second: smooth-sprite.0.2_21
+  - first:
+      213: 7025397356952154722
+    second: smooth-sprite.0.2_22
+  - first:
+      213: -5818484412422428722
+    second: smooth-sprite.0.2_23
+  - first:
+      213: -8681400295055005091
+    second: smooth-sprite.0.2_24
+  - first:
+      213: -8027158179319994147
+    second: smooth-sprite.0.2_25
+  - first:
+      213: 5803256315304335751
+    second: smooth-sprite.0.2_26
+  - first:
+      213: -8772281812181569764
+    second: smooth-sprite.0.2_27
+  - first:
+      213: -2606515260461059466
+    second: smooth-sprite.0.2_28
+  - first:
+      213: -4189402986250881091
+    second: smooth-sprite.0.2_29
+  - first:
+      213: -3759745167890012713
+    second: smooth-sprite.0.2_30
+  - first:
+      213: 3070078379855444031
+    second: smooth-sprite.0.2_31
+  - first:
+      213: 1490740130485950731
+    second: smooth-sprite.0.2_32
+  - first:
+      213: -6404696011059837055
+    second: smooth-sprite.0.2_33
+  - first:
+      213: 1809655614324730107
+    second: smooth-sprite.0.2_34
+  - first:
+      213: -4947575913942877811
+    second: smooth-sprite.0.2_35
+  - first:
+      213: 4625518803804096807
+    second: smooth-sprite.0.2_36
+  - first:
+      213: -2097595986660233065
+    second: smooth-sprite.0.2_37
+  - first:
+      213: -4834904669273092566
+    second: smooth-sprite.0.2_38
+  - first:
+      213: -2543858383515493295
+    second: smooth-sprite.0.2_39
+  - first:
+      213: 5179609843822034036
+    second: smooth-sprite.0.2_40
+  - first:
+      213: -6122830430941585370
+    second: smooth-sprite.0.2_41
+  - first:
+      213: -5700927202298158259
+    second: smooth-sprite.0.2_42
+  - first:
+      213: 1770498291479759077
+    second: smooth-sprite.0.2_43
+  - first:
+      213: -6080968850053639934
+    second: smooth-sprite.0.2_44
+  - first:
+      213: 4454949164216651731
+    second: smooth-sprite.0.2_45
+  - first:
+      213: 2835038916451431789
+    second: smooth-sprite.0.2_46
+  - first:
+      213: -3096136565426389523
+    second: smooth-sprite.0.2_47
+  - first:
+      213: 8307860051189719038
+    second: smooth-sprite.0.2_48
+  - first:
+      213: -4862431502660539136
+    second: smooth-sprite.0.2_49
+  - first:
+      213: 1139768669531547020
+    second: smooth-sprite.0.2_50
+  - first:
+      213: 4306182849517929600
+    second: smooth-sprite.0.2_51
+  - first:
+      213: 7804980180495826638
+    second: smooth-sprite.0.2_52
+  - first:
+      213: 7601634560215053115
+    second: smooth-sprite.0.2_53
+  - first:
+      213: -223409698178757630
+    second: smooth-sprite.0.2_54
+  - first:
+      213: 6531158844402655756
+    second: smooth-sprite.0.2_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df611da2f58fcd60800000000000000
+      internalID: 7912690347645431768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 420
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2496c4fd1cae1e9b0800000000000000
+      internalID: -5052499188537071294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 420
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02feefd08e8a9fa40800000000000000
+      internalID: 5402534942628310816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 420
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c89f58f780d58f0800000000000000
+      internalID: -550274235667739623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 420
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22734b89c8c143770800000000000000
+      internalID: 8589521779485325090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 420
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed6ed1cf85baf080800000000000000
+      internalID: -9152803663639581212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 420
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ca38962bc11f380800000000000000
+      internalID: -8939332232753730425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 420
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b311348b65c02da30800000000000000
+      internalID: 4238463765907181883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f80116f6120ae80800000000000000
+      internalID: -8169492961796518092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 360
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0693d203f3fa97d20800000000000000
+      internalID: 3276842889814817120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 360
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d459596e1cd397b0800000000000000
+      internalID: -5218585520017681195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 360
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a38c5257c442fb0800000000000000
+      internalID: -4673526447274968516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 360
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62a5078615c5f2c0800000000000000
+      internalID: -4398392760512175507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 360
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5332cc9e129f96a50800000000000000
+      internalID: 6515012260019839797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 360
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d95e9b03a759ca0800000000000000
+      internalID: -6010763777960206960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 360
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e0ef4df657ac9c0800000000000000
+      internalID: -3906180603615244770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13597276f197eb40800000000000000
+      internalID: 5469500760133292830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 300
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a0dab80e1927630800000000000000
+      internalID: 3923358618995198537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 300
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f666582353e7e50800000000000000
+      internalID: 6808938177733488520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 300
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8124491b26c4654e0800000000000000
+      internalID: -1993321798295076328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 300
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ed575913247d600800000000000000
+      internalID: 492935464948719115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_21
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 300
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08010861ca5a67990800000000000000
+      internalID: -7388535980124270464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_22
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 300
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262f91b8ca93f7160800000000000000
+      internalID: 7025397356952154722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 300
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7e96a2147904fa0800000000000000
+      internalID: -5818484412422428722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a664c7d68758780800000000000000
+      internalID: -8681400295055005091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8a2c56a2ec99090800000000000000
+      internalID: -8027158179319994147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789d14e2fde498050800000000000000
+      internalID: 5803256315304335751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f2c4b5b28924680800000000000000
+      internalID: -8772281812181569764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67275963e2cc3dbd0800000000000000
+      internalID: -2606515260461059466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db73e8f2e204cd5c0800000000000000
+      internalID: -4189402986250881091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5ace590b3b2dbc0800000000000000
+      internalID: -3759745167890012713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_31
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 240
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38f3ef350c1b9a20800000000000000
+      internalID: 3070078379855444031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09d80a104c20b410800000000000000
+      internalID: 1490740130485950731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 180
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187ca6659e2fd17a0800000000000000
+      internalID: -6404696011059837055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 180
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8ed9971303d1910800000000000000
+      internalID: 1809655614324730107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_35
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 180
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89f72e6beda65bb0800000000000000
+      internalID: -4947575913942877811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 180
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72902a258d4213040800000000000000
+      internalID: 4625518803804096807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_37
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 180
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790f4dc4097d3e2e0800000000000000
+      internalID: -2097595986660233065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e8919d1d7f6ecb0800000000000000
+      internalID: -4834904669273092566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 120
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cd8a3374662bcd0800000000000000
+      internalID: -2543858383515493295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 120
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cf020d5bba1e740800000000000000
+      internalID: 5179609843822034036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 120
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62066c7c926570ba0800000000000000
+      internalID: -6122830430941585370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 120
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4328a01aec32e0b0800000000000000
+      internalID: -5700927202298158259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_43
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8461bc0d2129810800000000000000
+      internalID: 1770498291479759077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201565a9c0f0c9ba0800000000000000
+      internalID: -6080968850053639934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 60
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df8e8959a823dd30800000000000000
+      internalID: 4454949164216651731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 60
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65fe73bfd4185720800000000000000
+      internalID: 2835038916451431789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_47
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 60
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded79a1a2305805d0800000000000000
+      internalID: -3096136565426389523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 60
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff52da13b27b4370800000000000000
+      internalID: 8307860051189719038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_49
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 60
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00def338f4c258cb0800000000000000
+      internalID: -4862431502660539136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c852c81f09541df00800000000000000
+      internalID: 1139768669531547020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084456b8c72a2cb30800000000000000
+      internalID: 4306182849517929600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecefa612f1cd05c60800000000000000
+      internalID: 7804980180495826638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_53
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3373f97b5e6e7960800000000000000
+      internalID: 7601634560215053115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c8dac201a46ecf0800000000000000
+      internalID: -223409698178757630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smooth-sprite.0.2_55
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02654c8d5653aa50800000000000000
+      internalID: 6531158844402655756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
