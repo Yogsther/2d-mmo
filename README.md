@@ -1,44 +1,26 @@
-## Idea
+## How to setup project locally
 
-* Multiplayer MMO
-* 2D world space
-* Server side AI enemies
+### Game
 
-## How
-* Server in NodeJS
-* Communication with Websockets
-* Free pixelart assets
-* Tab combat
+The game client is located in `unity-client`. Import that in your
+unity hub. Unity version is 2020.3.2f1.
 
-## Plan
+To try multiplayer, build and run + editor play
 
-* Monday
-  * Find / Create texture assets
-  * Unity game movement
+### Server
 
-* Tuesday
-  * Start on server
-  * Connect to client with sockets
+Install NodeJS (NPM is bundled)
 
-* Wednesday
-  * Create AI
-  * Fix bugs
-  * Finalize
-  * Prepare presentation
+1. `cd server` Go to the server folder
+2. `npm i` Install dependencies
+3. `node .` Start the server
 
 
+## Game structure
 
-## Requirements
+* /server
+  * `index.js` is the main startup file.
 
-
-## Problems to solve
-
-
-
-## Specs
-
-
-
-## TODO
-
-
+* /unity-client
+  * `Character.cs` all characters in the game (players and mobs) inherit this class
+  * `CharacterInfoDisplay.cs` This controlls the hp, username and damage UI
