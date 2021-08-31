@@ -5,7 +5,7 @@
 const game_port = 80;
 const tick_rate = 30; //hz
 
-const { nanoid } = require('nanoid');
+
 
 // Websocket, communication with game clients
 const WebSocket = require("ws");
@@ -41,32 +41,11 @@ function GenerateSpawnPoint() {
     }
 }
 
-class Character {
-    constructor(name) {
-        this.name = name;
-        this.type = "mob"
-        this.player = false;
-        this.position = { x: 0, y: 0 }
-        this.lastTickPosition = this.position;
-        this.speed = 1;
-        this.maxHp = 20;
-        this.hp = this.maxHp;
+const Character = require("./Character")
 
-        this.id = nanoid()
+const Mob = require("./Mob")
 
-        characters[this.id] = this
-    }
-}
 
-class Monster extends Character {
-    constructor(name) {
-        super(name)
-        this.position = { x: 0, y: 0 }//GenerateSpawnPoint()
-        this.home = { x: this.position.x, y: this.position.y };
-        this.state = "still"
-        this.speed = 1
-    }
-}
 
 
 class Player extends Character {
@@ -151,12 +130,13 @@ function GetAmountOfCharacters() {
 }
 
 
-new Monster("test")
+let mob = new Mob("test")
+characters[mob.id] = mob;
 
 setInterval(() => {
     if (GetAmountOfCharacters() > 1) UpdateMobs()
 
-    //if (GetAmountOfCharacters() < 5) new Monster("Monster")
+    //if (GetAmountOfCharacters() < 5) new Mob("Monster")
 
     EmitWorldUpdate()
 }, 1000 / tick_rate);
@@ -314,6 +294,7 @@ wss.on("connection", (ws, req) => {
                 case "login":
                     let loginInfo = JSON.parse(package.content)
                     let player = new Player(loginInfo.username, loginInfo.token, ws)
+                    characters[player.id] = player;
                     console.log(player.name + " joined the world.")
                     EmitPlayerJoinedEvent(player.id)
                     ws.send(new Package("login_success", player.id).ToString())
@@ -354,3 +335,5 @@ wss.on("connection", (ws, req) => {
     ws.send(Pack("packs", JSON.stringify(getPacks())))
     ws.send(Pack("cards", getUnityCards())) */
 });
+
+console.log(`Started MMO server on port ${game_port}`)
