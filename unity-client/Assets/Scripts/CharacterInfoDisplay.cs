@@ -21,7 +21,7 @@ public class CharacterInfoDisplay : MonoBehaviour {
         text.transform.position = new Vector2(Random.Range(animateTextFromLeft.position.x, animateTextFromRight.position.x), animateTextFromLeft.position.y);
         bool positive = value >= 0;
         text.gameObject.SetActive(true);
-        text.text = (positive ? "+" : "-") + value;
+        text.text = (positive ? "+" : "") + value;
         text.color = positive ? positiveTextColor : negativeColorText;
         textAnimations.Add(text);
     }

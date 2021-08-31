@@ -19,14 +19,24 @@ public class GameManager : MonoBehaviour {
     public bool initiallyLoaded = false;
 
     public GameObject loginScreen;
-    //public InputField 
+    public InputField nameInput;
+
 
     public Vector2 lastSentPosition;
 
     void Start() {
         Application.runInBackground = true;
         player.gm = this;
+        loginScreen.SetActive(true);
     }
+
+    public void Login() {
+        player.character.name = nameInput.text;
+        player.character.Init();
+        network.Connect(nameInput.text);
+        loginScreen.SetActive(false);
+    }
+
 
     public void SpawnCharacter(NetworkCharacter networkCharacter) {
 
@@ -43,8 +53,8 @@ public class GameManager : MonoBehaviour {
         character.name = networkCharacter.name;
         character.hp = networkCharacter.hp;
         character.maxHp = networkCharacter.maxHp;
-
         character.Init();
+        character.SetPosition(networkCharacter.position);
 
         characters.Add(character);
     }
@@ -92,21 +102,36 @@ public class GameManager : MonoBehaviour {
                     OnHealthChange(ev);
                     break;
                 case "death":
-                    OnDeath(ev.value);
+                    OnCharacterDeath(ev.value);
                     break;
             }
         }
     }
 
-    void OnDeath(string id) {
-        Character character = GetCharacter(id);
-        Destroy(character.gameObject);
+    // When any character died
+
+    void OnCharacterDeath(string id) {
+        if (id != player.character.id) {
+
+            Character character = GetCharacter(id);
+            Destroy(character.gameObject);
+        }
+
+    }
+
+    // When this player died
+    public void OnDied() {
+        loggedIn = false;
+        loginScreen.SetActive(true);
     }
 
     void OnPlayerLeft(string id) {
         Character left = GetCharacter(id);
-        characters.Remove(left);
-        Destroy(left.gameObject);
+        if (left) {
+            characters.Remove(left);
+            Destroy(left.gameObject);
+        }
+
     }
 
     NetworkCharacter GetNetworkCharacter(string id) {
@@ -162,6 +187,7 @@ public class GameManager : MonoBehaviour {
     public void OnLogin(string id) {
         player.character.id = id;
         player.character.gm = this;
+        loginScreen.SetActive(false);
         loggedIn = true;
     }
 }

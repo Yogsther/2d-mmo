@@ -36,6 +36,7 @@ public class Character : MonoBehaviour {
     }
 
     private void OnMouseDown() {
+        if (!online) return;
         gm.Target(id);
     }
 
@@ -48,9 +49,7 @@ public class Character : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        if (online)
-            UpdateOnlineMovement();
-        else UpdateOfflineMovememnt();
+        if (!online) UpdateOfflineMovememnt();
     }
 
     void UpdateOfflineMovememnt() {
@@ -60,14 +59,6 @@ public class Character : MonoBehaviour {
 
         UpdateAnimation(movement);
         movement = Vector2.zero;
-    }
-
-    void UpdateOnlineMovement() {
-
-    }
-
-    public void SetPosition() {
-
     }
 
     public void UpdateAnimation(Vector2 movement) {
@@ -81,6 +72,10 @@ public class Character : MonoBehaviour {
     // This is used to move all the online characters.
     public void NetworkMove(Vector2 position) {
         UpdateAnimation(position - rb.position);
+        rb.MovePosition(position);
+    }
+
+    public void SetPosition(Vector2 position) {
         rb.MovePosition(position);
     }
 

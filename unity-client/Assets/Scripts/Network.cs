@@ -63,13 +63,18 @@ public class Network : MonoBehaviour {
     public GameManager gm;
 
     public void Connect(string username) {
-        Package package = new Package("login", new Dictionary<string, string>() {
+        if (ws.State == WebSocketState.Open) {
+            Package package = new Package("login", new Dictionary<string, string>() {
             {"username", username },
             {"token", token }
         });
 
-        ws.SendText(package.ToString());
+            ws.SendText(package.ToString());
+        } else {
+            Debug.LogWarning("Login attempt failed, not connected to server");
+        }
     }
+
 
     async void Start() {
 
@@ -84,7 +89,6 @@ public class Network : MonoBehaviour {
 
         ws.OnOpen += () => {
             Debug.Log("Connected");
-            Connect("OlleTest");
         };
 
         ws.OnMessage += (bytes) => {
@@ -99,6 +103,9 @@ public class Network : MonoBehaviour {
                     break;
                 case "tick":
                     OnTick(JsonConvert.DeserializeObject<Update>(package.content));
+                    break;
+                case "died":
+                    gm.OnDied();
                     break;
             }
         };
