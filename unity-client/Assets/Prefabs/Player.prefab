@@ -239,6 +239,7 @@ MonoBehaviour:
   online: 0
   id: 
   name: 
+  gm: {fileID: 0}
   hp: 0
   maxHp: 0
   targeted: 0

@@ -10,8 +10,4 @@ public class Mob : MonoBehaviour {
         character.online = true;
         character.Init();
     }
-
-    void Update() {
-
-    }
 }

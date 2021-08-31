@@ -18,18 +18,35 @@ class Event {
     constructor(identifier, value) {
         this.identifier = identifier;
         this.value = value;
+        this.floats = {}
+        this.strings = {}
         events.push(this)
     }
 }
 
 const SERVER_SPEED = .2;
 
+const MOB_STATES = [
+    "still",
+    "left",
+    "right",
+    "up",
+    "down"
+]
+
+function GenerateSpawnPoint() {
+    return {
+        x: Math.floor(Math.random() * 10) - 5,
+        y: Math.floor(Math.random() * 10) - 5
+    }
+}
+
 class Character {
     constructor(name) {
         this.name = name;
         this.type = "mob"
         this.player = false;
-        this.position = { x: 5, y: 0 }
+        this.position = { x: 0, y: 0 }
         this.lastTickPosition = this.position;
         this.speed = 1;
         this.maxHp = 20;
@@ -40,6 +57,17 @@ class Character {
         characters[this.id] = this
     }
 }
+
+class Monster extends Character {
+    constructor(name) {
+        super(name)
+        this.position = { x: 0, y: 0 }//GenerateSpawnPoint()
+        this.home = { x: this.position.x, y: this.position.y };
+        this.state = "still"
+        this.speed = 1
+    }
+}
+
 
 class Player extends Character {
     constructor(name, token, ws) {
@@ -90,6 +118,8 @@ function CreateWorldUpdate() {
             type: character.type,
             position: character.position,
             lastTickPosition: character.lastTickPosition,
+            hp: character.hp,
+            maxHp: character.maxHp
         })
     }
 
@@ -120,8 +150,14 @@ function GetAmountOfCharacters() {
     return Object.keys(characters).length
 }
 
+
+new Monster("test")
+
 setInterval(() => {
     if (GetAmountOfCharacters() > 1) UpdateMobs()
+
+    //if (GetAmountOfCharacters() < 5) new Monster("Monster")
+
     EmitWorldUpdate()
 }, 1000 / tick_rate);
 
@@ -134,9 +170,79 @@ function UpdateMobs() {
     }
 }
 
+function Distance(pos1, pos2) {
+    return Math.hypot(pos2.x - pos1.x, pos2.y - pos1.y)
+}
+
 function RunMobLogic(mob) {
-    console.log("Running mob ")
-    mob.lastTickPosition = mob.position;
+
+    var maxDistanceFromHome = 2;
+
+    var distanceToTarget = 30; // The minim distance to start following player
+    var fightDistance = 3; // The distance the mob will stand to the player when attacking
+    var targetHuman;
+    let distanceToPlayer;
+
+    for (let id in characters) {
+        let character = characters[id]
+        if (character.player) {
+            let player = character;
+            distanceToPlayer = Distance(mob.position, player.position)
+
+            if (distanceToPlayer < fightDistance) {
+                targetHuman = player
+                console.log("IN FIGHT " + distanceToPlayer)
+            }
+            else if (distanceToPlayer < distanceToTarget) {
+                targetHuman = player;
+                // Move twoards the player
+
+                let dir = {
+                    x: (player.position.x - mob.position.x) / distanceToTarget,
+                    y: (player.position.y - mob.position.y) / distanceToTarget
+                }
+
+                mob.position.x += dir.x * mob.speed * SERVER_SPEED
+                mob.position.y += dir.y * mob.speed * SERVER_SPEED
+                console.log("WALKING TOWARDS PLAYER " + distanceToPlayer)
+            }
+        }
+    }
+    if (!targetHuman
+    ) {
+        console.log("CHILLING " + distanceToPlayer)
+        if (mob.home.x - mob.position.x >= maxDistanceFromHome) mob.state = "right"
+        else if (mob.home.x - mob.position.x <= -maxDistanceFromHome) mob.state = "left"
+        else if (mob.home.y - mob.position.y >= maxDistanceFromHome) mob.state = "up"
+        else if (mob.home.y - mob.positiony <= -maxDistanceFromHome) mob.state = "down"
+        else if (Math.random() > .95) {
+            mob.state = MOB_STATES[Math.floor(Math.random() * MOB_STATES.length)]
+        }
+
+        var movement = { x: 0, y: 0 }
+        switch (mob.state) {
+            case "up":
+                movement = { x: 0, y: 1 }
+                break;
+            case "down":
+                movement = { x: 0, y: -1 }
+                break;
+            case "left":
+                movement = { x: -1, y: 0 }
+                break;
+            case "right":
+                movement = { x: 1, y: 0 }
+                break;
+        }
+
+        mob.position.x += movement.x * mob.speed * SERVER_SPEED
+        mob.position.y += movement.y * mob.speed * SERVER_SPEED
+    }
+
+
+
+
+
     //mob.position.x += mob.speed * SERVER_SPEED
 }
 
@@ -153,6 +259,39 @@ function EmitPlayerJoinedEvent(id) {
     new Event("player_joined", id)
 }
 
+function OnDamage(player, package) {
+    let damagePackage = JSON.parse(package)
+    let target = GetCharacter(damagePackage.id)
+    target.hp -= damagePackage.amount;
+    createHealthChangeEvent(target.id, -damagePackage.amount)
+    if (target.hp <= 0) {
+        Kill(target)
+    }
+}
+
+function OnHeal(player, package) {
+    let healPackage = JSON.parse(package)
+    let target = GetCharacter(healPackage.id)
+    target.hp += healPackage.amount;
+    if (target.hp > target.maxHp) target.hp = target.maxHp;
+    createHealthChangeEvent(target.id, healPackage.amount)
+}
+
+function Kill(character) {
+    new Event("death", character.id)
+    delete characters[character.id]
+}
+
+function createHealthChangeEvent(id, amount) {
+    let event = new Event("health_change")
+    event.strings["id"] = id
+    event.floats["amount"] = amount
+}
+
+function OnPositionUpdate(player, package) {
+    player.position = JSON.parse(package)
+}
+
 wss.on("connection", (ws, req) => {
 
     /* DeleteAllCharacters()
@@ -167,22 +306,29 @@ wss.on("connection", (ws, req) => {
         console.log(player.name + " left the world.")
     })
 
-    ws.on("message", message => {
-        var package = JSON.parse(message)
-        switch (package.identifier) {
-            case "login":
-                let loginInfo = JSON.parse(package.content)
-                let player = new Player(loginInfo.username, loginInfo.token, ws)
-                console.log(player.name + " joined the world.")
-                EmitPlayerJoinedEvent(player.id)
-                ws.send(new Package("login_success", player.id).ToString())
-                break;
-            case "position_update":
-                let character = GetPlayerFromSocket(ws)
-                character.position = JSON.parse(package.content)
-                break;
-        }
-    })
+    console.log("Online players " + GetAmountOfCharacters()) +
+
+        ws.on("message", message => {
+            var package = JSON.parse(message)
+            switch (package.identifier) {
+                case "login":
+                    let loginInfo = JSON.parse(package.content)
+                    let player = new Player(loginInfo.username, loginInfo.token, ws)
+                    console.log(player.name + " joined the world.")
+                    EmitPlayerJoinedEvent(player.id)
+                    ws.send(new Package("login_success", player.id).ToString())
+                    break;
+                case "position_update":
+                    OnPositionUpdate(GetPlayerFromSocket(ws), package.content)
+                    break;
+                case "damage":
+                    OnDamage(GetPlayerFromSocket(ws), package.content)
+                    break;
+                case "heal":
+                    OnHeal(GetPlayerFromSocket(ws), package.content)
+                    break;
+            }
+        })
 
 
     /*  ws.on("message", (message) => {

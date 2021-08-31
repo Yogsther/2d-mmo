@@ -29,11 +29,23 @@ public class Package {
 
 public class Event {
     public string identifier, value;
+    public Dictionary<string, string> strings;
+    public Dictionary<string, float> floats;
 }
 
 public class Update {
     public NetworkCharacter[] characters;
     public Event[] events;
+}
+
+
+public class HealthChangePackage {
+    public HealthChangePackage(string id, float amount) {
+        this.id = id;
+        this.amount = amount;
+    }
+    public string id;
+    public float amount;
 }
 
 public class NetworkCharacter {

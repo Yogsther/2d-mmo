@@ -22,10 +22,11 @@ public class Character : MonoBehaviour {
     public bool online = false; // If this is a local or online character (All characters except for the player are online for now.)
     public string id;
     public string name;
+    public GameManager gm;
 
     Vector2 movement; // The next movement to draw. (For offline characters)
 
-    public int hp, maxHp;
+    public float hp, maxHp;
 
     public bool targeted;
 
@@ -34,17 +35,16 @@ public class Character : MonoBehaviour {
         infoDisplay.name.text = name;
     }
 
+    private void OnMouseDown() {
+        gm.Target(id);
+    }
+
+    public void SetTargeted(bool targeted) {
+        this.targetIndecator.enabled = targeted;
+    }
+
     void Update() {
-        targetIndecator.enabled = targeted;
-
-        if (maxHp > 0) infoDisplay.hpSlider.value = hp / maxHp;
-
-        if (online) {
-            /*float now = Time.time * 1000f;
-            Vector2 movement = Vector2.Lerp(networkMoveFrom, networkMoveTo, (now - lastTick) / lastTickTime);
-            rb.MovePosition(movement * speed);*/
-            //rb.MovePosition(networkMoveTo);
-        }
+        if (maxHp > 0) infoDisplay.hpSlider.value = (hp / maxHp);
     }
 
     private void FixedUpdate() {

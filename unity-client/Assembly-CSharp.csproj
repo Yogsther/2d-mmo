@@ -59,10 +59,13 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Mob.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\CharacterInfoDisplay.cs" />
     <Compile Include="Assets\Scripts\Network.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\OnlineCharacter.cs" />
-    <Compile Include="Assets\Scripts\CharacterInfoDisplay.cs" />
+    <Compile Include="Assets\Scripts\Ground.cs" />
+    <Compile Include="Assets\Scripts\Ability.cs" />
+    <Compile Include="Assets\Scripts\HotbarItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

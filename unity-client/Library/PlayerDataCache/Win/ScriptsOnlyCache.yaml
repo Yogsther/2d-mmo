@@ -1,9 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Ability
     - Character
     - CharacterInfoDisplay
     - GameManager
+    - HotbarItem
     - Mob
     - Network
     - Player
@@ -42,9 +44,13 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
@@ -78,13 +84,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 610}
     - Class: 114
-      Script: {instanceID: 1492}
+      Script: {instanceID: 1442}
     - Class: 114
-      Script: {instanceID: 1640}
+      Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 1662}
+      Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 2080}
+      Script: {instanceID: 1664}
     - Class: 114
       Script: {instanceID: 2450}
     - Class: 114
@@ -94,15 +100,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2792}
     - Class: 114
+      Script: {instanceID: 2820}
+    - Class: 114
       Script: {instanceID: 2980}
+    - Class: 114
+      Script: {instanceID: 3082}
+    - Class: 114
+      Script: {instanceID: 3276}
     - Class: 114
       Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 4004}
+      Script: {instanceID: 3774}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 4006}
     - Class: 114
-      Script: {instanceID: 32858}
+      Script: {instanceID: 4310}
+    - Class: 114
+      Script: {instanceID: 4980}
+    - Class: 114
+      Script: {instanceID: 26918}
+    - Class: 114
+      Script: {instanceID: 27170}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -128,6 +146,12 @@ ScriptsOnlyBuild:
     - Class: 1839735485
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -190,7 +214,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: d3f22d08f8fb1a80375de16f43749e99
+      Hash: f5a5a765b71bffa2b599f07ac97335ad
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -230,12 +254,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -442,7 +460,7 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: ec869d8763ce09a541a04f6b6124d311
+      Hash: 081250a90a425b3714902be274766f9b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Character
@@ -500,6 +518,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 9f7a2e1a7510df1abd8afff4724cd25b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterInfoDisplay
   - hash:
       serializedVersion: 2
       Hash: 87cef3c82381dc586f6772c3e27561b6
@@ -610,7 +634,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: cfbf61d8d506fbd8e3c86a8b2780196d
+      Hash: a7efa5d73417984c1deb7667d76e96b2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -682,10 +706,22 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: bb1a4cbab4e813de6275cc93456fb8af
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CharacterInfoDisplay
+    className: Ground
+  - hash:
+      serializedVersion: 2
+      Hash: 60e10707f79c3ed1e25793af479a1d7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ability
+  - hash:
+      serializedVersion: 2
+      Hash: e0d0d74d05bf6ee6573410402643c32b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HotbarItem
   platform: 5
   scenePathNames:
   - Assets/Scenes/World.unity
